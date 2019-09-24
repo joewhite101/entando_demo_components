@@ -1,0 +1,7 @@
+version: entando.org/v1alpha1
+code: demo_bundle
+description: This is the bundle of entando demo components
+
+components:
+  widgets:
+    - hello_widget.yml
