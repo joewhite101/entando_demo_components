@@ -1,0 +1,7 @@
+version: 0.0.1
+code: member-form-widget
+titles:
+    en: Member Table Widget
+    it: Member Table Widget
+group: free
+customUiPath: member-form-widget.ftl

@@ -1,0 +1,35 @@
+version: entando.org/v1alpha1
+code: meware2_bundle
+description: This is the meware2 bundle
+
+components:
+  service:
+    image: kerruba/meware2-service:0.0.1-SNAPSHOT
+    ingressPath: /meware2
+    healthCheckPath: /actuator/health
+    dbms: postgresql
+    roles:
+    - name: meware2-admin
+      code: "meware2-admin"
+    - name: conference-admin
+      code: "conference-admin"
+    - name: member-admin
+      code: "member-admin"
+# entando-needle-descriptor-add-roles - Entando blueprint will add roles here
+
+    permissions: []
+
+  widgets:
+    -ui/widgets/conference/tableWidget/table-widget.yaml
+    -ui/widgets/conference/detailsWidget/details-widget.yaml
+    -ui/widgets/conference/formWidget/form-widget.yaml
+    -ui/widgets/member/tableWidget/table-widget.yaml
+    -ui/widgets/member/detailsWidget/details-widget.yaml
+    -ui/widgets/member/formWidget/form-widget.yaml
+# entando-needle-descriptor-add-widgets - Entando blueprint will add widget bundle files here
+
+  pageModels:
+
+  contentTypes:
+
+  contentModels:

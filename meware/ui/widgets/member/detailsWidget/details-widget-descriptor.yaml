@@ -1,0 +1,7 @@
+version: 0.0.1
+code: member-details-widget
+titles:
+    en: Member Details Widget
+    it: Member Details Widget
+group: free
+customUiPath: member-details-widget.ftl
