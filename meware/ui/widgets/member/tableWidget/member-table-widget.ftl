@@ -1,3 +1,4 @@
+<#assign wp=JspTaglibs["/aps-core"]>
 <script src="<@wp.resourceURL />meware/static/js/runtime~main.6e1e4e1c.js"></script>
 <script src="<@wp.resourceURL />meware/static/js/main.11175047.chunk.js"></script>
 <script src="<@wp.resourceURL />meware/static/js/2.4f488087.chunk.js"></script>
