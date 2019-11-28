@@ -4,12 +4,12 @@ components:
     plugins:
         - plugins/meware-plugin.yaml
     widgets:
-        - ui/widgets/conference/tableWidget/table-widget.yaml
-        - ui/widgets/conference/detailsWidget/details-widget.yaml
-        - ui/widgets/conference/formWidget/form-widget.yaml
-        - ui/widgets/member/tableWidget/table-widget.yaml
-        - ui/widgets/member/detailsWidget/details-widget.yaml
-        - ui/widgets/member/formWidget/form-widget.yaml
+        - ui/widgets/conference/tableWidget/table-widget-descriptor.yaml
+        - ui/widgets/conference/detailsWidget/details-widget-descriptor.yaml
+        - ui/widgets/conference/formWidget/form-widget-descriptor.yaml
+        - ui/widgets/member/tableWidget/table-widget-descriptor.yaml
+        - ui/widgets/member/detailsWidget/details-widget-descriptor.yaml
+        - ui/widgets/member/formWidget/form-widget-descriptor.yaml
     pageModels: null
     contentTypes: null
     contentModels: null
