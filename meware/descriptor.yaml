@@ -2,16 +2,8 @@ version: entando.org/v1alpha1
 code: meware2_bundle
 description: 'This is the meware2 bundle'
 components:
-    service:
-        image: 'kerruba/meware2-service:0.0.1-SNAPSHOT'
-        ingressPath: /meware2
-        healthCheckPath: /actuator/health
-        dbms: postgresql
-        roles:
-            - {name: meware2-admin, code: meware2-admin}
-            - {name: conference-admin, code: conference-admin}
-            - {name: member-admin, code: member-admin}
-        permissions: []
+    plugins:
+        - plugins/meware-plugin.yaml
     widgets:
         - ui/widgets/conference/tableWidget/table-widget.yaml
         - ui/widgets/conference/detailsWidget/details-widget.yaml

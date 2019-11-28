@@ -1,0 +1,17 @@
+kind: "EntandoPlugin"
+apiVersion: "entando.org/v1alpha1"
+metadata:
+  name: "meware-plugin"
+spec:
+  image: "kerruba/meware-service:0.0.1-SNAPSHOT"
+  replicas: 1
+  dbms: "postgresql"
+  ingressPath: "/meware"
+  ingressHostName: "meware.192.168.1.9.nip.io"
+  healthCheckPath: "/management/health"
+  roles: []
+  permissions: []
+  parameters: {}
+  securityLevel: "strict"
+  connectionConfigNames: []
+
