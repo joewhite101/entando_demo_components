@@ -5,6 +5,7 @@ metadata:
 spec:
   image: "kerruba/meware-service:0.0.1-SNAPSHOT"
   dbms: "postgresql"
+  replicas: "1"
   ingressPath: "/meware"
   ingressHostName: "meware.192.168.1.9.nip.io"
   healthCheckPath: "/management/health"
